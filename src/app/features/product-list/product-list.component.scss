@@ -19,6 +19,10 @@
     align-items: center;
     gap: 1em;
     margin-bottom: 2em;
+
+    input {
+      font-family: 'Montserrat', FontAwesome, sans-serif;
+    }
   }
 
   &__item {
