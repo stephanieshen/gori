@@ -1,0 +1,29 @@
+/*
+* RESET RULES
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: var(--base-font-size);
+  @include font();
+}
+
+button:focus {
+  outline: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}

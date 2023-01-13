@@ -1,0 +1,16 @@
+
+@mixin font($type: regular) {
+  @if $type == regular {
+    font-family: 'Montserrat', sans-serif;
+  } @else if $type == bold {
+    font-family: 'Montserrat Bold', sans-serif;
+  } @else if $type == semibold {
+    font-family: 'Montserrat Semi Bold', sans-serif;
+  } @else if $type == medium {
+    font-family: 'Montserrat Medium', sans-serif;
+  } @else if $type == italic {
+    font-family: 'Montserrat Light', sans-serif;
+  } @else {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
