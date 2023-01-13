@@ -13,3 +13,13 @@ export class ProductListComponent implements OnInit {
   }
 
 }
+
+
+
+/**
+ * Item name
+ * Brand
+ * Price
+ * Quantity
+ * 
+ */

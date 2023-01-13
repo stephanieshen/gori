@@ -1,0 +1,22 @@
+/**
+ * Button Component
+ */
+.#{$style-prefix}-btn {
+
+  &--primary {
+    background-color: $secondary;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($secondary, 35%);
+      color: #fff;
+    }
+  }
+
+  &--accent,
+  &--accent:hover {
+    border: 1px solid $secondary;
+    color: $secondary;
+    background-color: none;
+  }
+}

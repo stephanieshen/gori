@@ -1,0 +1,16 @@
+@import '~src/assets/scss/config';
+
+.#{ $style-prefix }-app {
+
+  &__navbar {
+    padding: 0.9em;
+    background-color: $primary;
+
+    a {
+      padding: 0;
+      margin: 0;
+      color: $secondary;
+      @include font(bold);
+    }
+  }
+}

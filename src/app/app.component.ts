@@ -25,12 +25,3 @@ export class AppComponent implements OnInit {
     );
   }
 }
-
-
-/**
- * Item name
- * Brand
- * Price
- * Quantity
- * 
- */
