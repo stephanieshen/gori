@@ -47,10 +47,6 @@
     margin-bottom: 0.8em;
     border-radius: 8px;
     cursor: pointer;
-
-    @include respond-above(lg) {
-      cursor: auto;
-    }
   }
 
   &__list-header {

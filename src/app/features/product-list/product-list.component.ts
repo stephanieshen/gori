@@ -12,14 +12,9 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openProductDetails(): void {
+    
+  }
 }
 
 
-
-/**
- * Item name
- * Brand
- * Price
- * Quantity
- * 
- */
