@@ -1,24 +1,40 @@
 @import '~src/assets/scss/config';
 
 .#{ $style-prefix }-product-list {
-  padding: 3em 0;
+  padding: 1em 0;
 
-  &__actions-col {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
+  @include respond-above(lg) {
+    padding: 3em 0;
   }
 
   &__add-btn {
-    min-width: 180px;
+    width: 100%;
     padding: 0.8em;
+
+    @include respond-above(lg) {
+      width: 180px;
+    }
+  }
+
+  &__brand-name,
+  &__qty {
+    font-size: 16px;
+
+    @include respond-above(lg) {
+      font-size: 1em;
+    }
   }
 
   &__heading-form-area {
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: 1em;
     margin-bottom: 2em;
+
+    @include respond-above(lg) {
+      flex-direction: row;
+    }
 
     input {
       font-family: 'Montserrat', FontAwesome, sans-serif;
@@ -30,13 +46,49 @@
     background-color: #fff;
     margin-bottom: 0.8em;
     border-radius: 8px;
+    cursor: pointer;
+
+    @include respond-above(lg) {
+      cursor: auto;
+    }
   }
 
   &__list-header {
+    display: none;
     padding: 1em;
+
+    @include respond-above(lg) {
+      display: flex;
+    }
 
     span {
       @include font(semibold);
+    }
+  }
+
+  &__price {
+    margin-top: 12px;
+    color: $accent;
+    @include font(bold);
+
+    @include respond-above(lg) {
+      margin-top: 0;
+    }
+  }
+
+  &__product-name {
+    @include font(semibold);
+
+    @include respond-above(lg) {
+      @include font();
+    }
+  }
+
+  &__view-icon {
+    display: none;
+
+    @include respond-above(lg) {
+      display: block;
     }
   }
 }

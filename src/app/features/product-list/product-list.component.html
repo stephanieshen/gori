@@ -15,17 +15,19 @@
           </button>
         </div>
         <div class="row gori-product-list__list-header">
-          <div class="col-lg-4">
+          <div class="col-lg-3">
             <span>Product Name</span>
           </div>
           <div class="col-lg-3">
             <span>Brand</span>
           </div>
+          <div class="col-lg-2">
+            <span>Quantity</span>
+          </div>
           <div class="col-lg-3">
             <span>Price</span>
           </div>
-          <div class="col-lg-2">
-            <span>Quantity</span>
+          <div class="col-lg-1">
           </div>
         </div>
       </div>
@@ -33,19 +35,30 @@
       <div class="gori-product-list__list">
         <ng-container *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
           <div class="row gori-product-list__item">
-            <div class="col-lg-4">
-              <span>
+            <div class="col-lg-3">
+              <span class="row gori-product-list__product-name">
                 Product Name 1
               </span>
             </div>
             <div class="col-lg-3">
-              <span>Brand Name 1</span>
-            </div>
-            <div class="col-lg-3">
-              <span>₱200.00</span>
+              <span class="row gori-product-list__brand-name">
+                Brand Name 1
+              </span>
             </div>
             <div class="col-lg-2">
-              <span>20 pcs.</span>
+              <span class="row gori-product-list__qty">
+                20 pcs.
+              </span>
+            </div>
+            <div class="col-lg-3">
+              <span class="row gori-product-list__price">
+                ₱200.00
+              </span>
+            </div>
+            <div class="col-lg-1">
+              <button class="btn gori-btn gori-btn--primary gori-product-list__view-icon">
+                <i class="fa fa-eye"></i>
+              </button>
             </div>
           </div>
         </ng-container>
