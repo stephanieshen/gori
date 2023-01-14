@@ -1,0 +1,24 @@
+@import '~src/assets/scss/config';
+
+.#{ $style-prefix }-product-details {
+
+  &__content {
+
+    @include respond-above(lg) {
+      padding: 1em;
+    }
+  }
+
+  &__info {
+    
+    &:not(:last-of-type) {
+      margin-bottom: 1em;
+    }
+
+    label {
+      display: block;
+      color: $secondary;
+      @include font(semibold)
+    }
+  }
+}

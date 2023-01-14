@@ -1,0 +1,16 @@
+/**
+ * Modal Component
+ */
+.#{$style-prefix}-modal {
+
+  &__close {
+    background: none;
+    border: none;
+    color: $secondary;
+  }
+
+  &__title {
+    font-size: 1em;
+    @include font(semibold);
+  }
+}

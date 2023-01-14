@@ -1,1 +1,31 @@
-<p>product-details works!</p>
+<div class="modal-header">
+  <h4 class="modal-title pull-left gori-modal__title">
+    {{ product.name }}
+  </h4>
+  <button type="button" class="close pull-right gori-modal__close" aria-label="Close" (click)="bsModalRef.hide()">
+    <i class="fa fa-close"></i>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="gori-product-details__content">
+    <div class="gori-product-details__info">
+      <label>Product Name</label>
+      <span>{{ product.name }}</span>
+    </div>
+    <div class="gori-product-details__info">
+      <label>Brand</label>
+      <span>{{ product.brand }}</span>
+    </div>
+    <div class="gori-product-details__info">
+      <label>Quantity</label>
+      <span>{{ product.quantity }} pcs.</span>
+    </div>
+    <div class="gori-product-details__info">
+      <label>Price </label>
+      <span>₱{{ product.price }}</span>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn gori-btn gori-btn--accent" (click)="bsModalRef.hide()">Close</button>
+</div>

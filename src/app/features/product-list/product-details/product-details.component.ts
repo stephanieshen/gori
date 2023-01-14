@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/shared/models/product.model';
+import { BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'gori-product-details',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  constructor() { }
+  //initial state
+  product!: Product;
+
+  constructor(
+    public bsModalRef: BsModalRef
+  ) { }
 
   ngOnInit(): void {
   }
